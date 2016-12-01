@@ -1,0 +1,16 @@
+version: '2'
+services:
+    app:
+        image: node:6 # we will work with latest NodeJS 6.X
+        working_dir: /src
+        volumes: # bind sources to /src
+          - ".:/src"
+        ports:
+          - "8080:8080" #open required ports here
+          - "5858:5858"
+        environment:
+          - "TZ=Europe/Berlin"
+        environment: # add required environment variables if need
+          - PORT=8080
+          - NEW_RELIC_ENABLED=false
+        command: bash -c "sleep infinity"  # DON'T run app. Wait forever (Otherwise app's container will be stopped)

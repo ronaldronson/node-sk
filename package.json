@@ -1,0 +1,28 @@
+{
+  "name": "node-sk",
+  "version": "1.0.0",
+  "description": "Node starter kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon --debug",
+    "lint": "eslint .",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "node",
+    "http"
+  ],
+  "author": "ronaldronson",
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^17.0.3",
+    "nodemon": "^1.10.2"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "newrelic": "^1.34.0"
+  }
+}
